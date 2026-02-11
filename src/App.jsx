@@ -7,6 +7,7 @@ const events = [
     telugu: 'స్నాతకం / ప్రధానం',
     date: 'Friday, February 20, 2025',
     time: '10:00 AM onwards',
+    mealNote: 'Lunch to follow',
     venue: 'Ahwanam Hall, Annapurna De Royale, Lakshmipuram Road',
     mapsLink: 'https://maps.google.com/?q=Annapurna+De+Royale+Lakshmipuram+Guntur',
     shortDesc: 'Sacred groom ceremonies & Panakala Kavidi',
@@ -25,12 +26,13 @@ const events = [
     telugu: 'రిసెప్షన్',
     date: 'Friday, February 20, 2025',
     time: '7:00 PM onwards',
+    mealNote: 'Dinner to follow',
     venue: 'CK Convention, Mangalagiri',
     mapsLink: 'https://maps.google.com/?q=CK+Convention+Mangalagiri',
     shortDesc: 'Evening celebration with family & friends',
     image: '🎉',
     rituals: [],
-    significance: 'The reception is a joyous celebration where Siddhartha and Dhruthi are introduced as a married couple to the extended family, friends, and community.'
+    significance: 'The reception is a joyous celebration where Dhruthi and Siddhartha are introduced as a married couple to the extended family, friends, and community.'
   },
   {
     id: 'muhurtham',
@@ -49,7 +51,7 @@ const events = [
       { name: 'Talambralu', desc: 'Showering of sacred rice on each other' },
       { name: 'Saptapadi', desc: 'Seven steps around the sacred fire' }
     ],
-    significance: 'The Muhurtham at 11:29 PM is the most auspicious moment when Siddhartha and Dhruthi unite as one.'
+    significance: 'The Muhurtham at 11:29 PM is the most auspicious moment when Dhruthi and Siddhartha unite as one.'
   }
 ];
 
@@ -90,12 +92,12 @@ export default function App() {
           fontFamily: 'Georgia, serif',
           textShadow: '2px 2px 4px rgba(139, 69, 19, 0.2)'
         }}>
-          Siddhartha & Dhruthi
+          Dhruthi & Siddhartha
         </h1>
 
         {/* Telugu Names */}
         <p className="text-2xl" style={{ color: '#B8860B', fontFamily: 'serif' }}>
-          సిద్ధార్థ 💕 ధృతి
+          ధృతి 💕 సిద్ధార్థ
         </p>
 
         {/* Date Banner */}
@@ -157,7 +159,7 @@ export default function App() {
                     <span className="text-xl">📅</span> {event.date}
                   </p>
                   <p className="flex items-center gap-3 text-lg font-medium">
-                    <span className="text-xl">⏰</span> {event.time}
+                    <span className="text-xl">⏰</span> {event.time}{event.mealNote && <span className="text-sm italic" style={{ color: '#8B4513' }}> • {event.mealNote}</span>}
                   </p>
                   <a
                     href={event.mapsLink}
@@ -221,6 +223,7 @@ export default function App() {
                 <div className="p-4 rounded-xl text-center" style={{ background: '#FFF8DC', border: '1px solid #D4AF37' }}>
                   <p className="text-2xl mb-1">⏰</p>
                   <p className="font-semibold" style={{ color: '#8B4513' }}>{selectedEvent.time}</p>
+                  {selectedEvent.mealNote && <p className="text-sm italic mt-1" style={{ color: '#A0522D' }}>{selectedEvent.mealNote}</p>}
                 </div>
                 <a
                   href={selectedEvent.mapsLink}

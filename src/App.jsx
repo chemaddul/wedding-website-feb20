@@ -5,7 +5,7 @@ const events = [
     id: 'snathakam',
     name: 'Snathakam & Pradhanam',
     telugu: 'స్నాతకం / ప్రధానం',
-    date: 'Friday, February 20, 2025',
+    date: 'Friday, February 20, 2026',
     time: '10:00 AM onwards',
     mealNote: 'Lunch to follow',
     venue: 'Ahwanam Hall, Annapurna De Royale, Lakshmipuram Road',
@@ -24,7 +24,7 @@ const events = [
     id: 'reception',
     name: 'Reception',
     telugu: 'రిసెప్షన్',
-    date: 'Friday, February 20, 2025',
+    date: 'Friday, February 20, 2026',
     time: '7:00 PM onwards',
     mealNote: 'Dinner to follow',
     venue: 'CK Convention, Mangalagiri',
@@ -38,7 +38,7 @@ const events = [
     id: 'muhurtham',
     name: 'Muhurtham',
     telugu: 'ముహూర్తం',
-    date: 'Friday, February 20, 2025',
+    date: 'Friday, February 20, 2026',
     time: '11:29 PM',
     venue: 'CK Convention, Mangalagiri',
     mapsLink: 'https://maps.google.com/?q=CK+Convention+Mangalagiri',
@@ -105,7 +105,7 @@ export default function App() {
           background: 'linear-gradient(135deg, #8B4513, #A0522D)',
           boxShadow: '0 4px 15px rgba(139, 69, 19, 0.3)'
         }}>
-          <p className="text-white text-lg font-semibold">February 20, 2025 • Guntur</p>
+          <p className="text-white text-lg font-semibold">February 20, 2026 • Guntur</p>
         </div>
 
         {/* Decorative Divider */}

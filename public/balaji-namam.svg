@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 130" width="100" height="130">
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#000" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#shadow)">
+    <!-- Left white U-stroke -->
+    <path d="M10 25
+             C10 25, 8 70, 25 95
+             Q40 110, 50 115
+             Q45 105, 35 90
+             C22 70, 22 25, 22 25
+             Z"
+          fill="#F5F5F5" stroke="#E0E0E0" stroke-width="0.5"/>
+
+    <!-- Right white U-stroke -->
+    <path d="M90 25
+             C90 25, 92 70, 75 95
+             Q60 110, 50 115
+             Q55 105, 65 90
+             C78 70, 78 25, 78 25
+             Z"
+          fill="#F5F5F5" stroke="#E0E0E0" stroke-width="0.5"/>
+
+    <!-- Red center tilak - extends above the U -->
+    <path d="M50 5
+             L42 100
+             Q50 118, 50 118
+             Q50 118, 58 100
+             Z"
+          fill="#D32F2F"/>
+  </g>
+</svg>
